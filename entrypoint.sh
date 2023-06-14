@@ -1,10 +1,10 @@
 #!/bin/sh
 
 UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
-TROJAN_WSPATH=${TROJAN_WSPATH:-'/trojan'}
-SS_WSPATH=${SS_WSPATH:-'/shadowsocks'}
+VMESS_WSPATH=${VMESS_WSPATH:-'/dc18c80f-1ff8-4bb2-a5ad-1528cd276cf3-vmess'}
+VLESS_WSPATH=${VLESS_WSPATH:-'/dc18c80f-1ff8-4bb2-a5ad-1528cd276cf3-vless'}
+TROJAN_WSPATH=${TROJAN_WSPATH:-'/dc18c80f-1ff8-4bb2-a5ad-1528cd276cf3-trojan'}
+SS_WSPATH=${SS_WSPATH:-'/dc18c80f-1ff8-4bb2-a5ad-1528cd276cf3-shadowsocks'}
 URL=${HOSTNAME}-8080.csb.app
 
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#$VMESS_WSPATH#g;s#VLESS_WSPATH#$VLESS_WSPATH#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" /etc/xray/config.json
